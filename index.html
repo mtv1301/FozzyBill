@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+<button type="button" id="addProductBtn" class="btn btn-primary">Buy Product</button>
+<div id="inputContainer"></div>
+<button type="button" id="createBill" class="btn btn-primary">Create bill</button>
+<button type="button" id="removeAll" class="btn btn-danger">Remove all</button>
+<button type="button" id="BackToCard" class="btn btn-primary">Back to card</button>
+
+<div id="ticket" class="row">
+    <div class="text-center imgFozzy"><img src="fozzy_logo.jpg" alt="picture fozzy"></div>
+    <div class="col-md-12 text-center">ТОВ "Експансія"</div>
+    <div class="col-md-12 text-center">Гіпермаркет (магазин)</div>
+    <div class="col-md-12 text-center">м. Київ, Проспект Московський, 23</div>
+    <div class="col-md-12 text-center"><b>ПН 322949010132</b></div>
+    <div class="col-md-12">00001<span class="pull-right">01</span></div>
+    <div id="productListContainer">
+        <div class="col-md-12 purchasedGoods"><span class="pull-right"></span></div>
+    </div>
+    <hr class="style-for-hr">
+    <div class="col-md-12 pull-left"># ЧЕК № 27/360/446<span class="pull-right">#</span></div>
+    <div class="col-md-12"># Касса №27(Пестрецова)<span class="pull-right">#</span></div>
+    <hr class="style-for-hr">
+    <div class="col-md-12 sumStyle">СУМА<span class="pull-right" id="sumOfProduct"></span></div>
+    <hr class="style-for-hr">
+    <div class="col-md-12">ПДВ А <span class="custum-center">20,00%</span><span class="pull-right" id="percentageTotal"></span></div>
+    <div class="col-md-12 sumTax">СУМА ПОДАТКУ <span class="pull-right" id="percentageSum"></span></div>
+    <hr class="style-for-hr">
+    <div class="col-md-12">ГОТІВКА <span class="pull-right">1000,00</span></div>
+    <div class="col-md-12">РЕШТА <span class="pull-right" id="change"></span></div>
+    <div class="col-md-12 text-center">Дякуємо за покупку!</div>
+    <div class="col-md-12 text-center article">4 АРТИКУЛІВ</div>
+    <div class="col-md-12">0070015 0059515 <span class="pull-right" id="inputDate"></span></div>
+    <div class="col-md-12">ЗН КП000004123 <span class="pull-right">ФН 3000173844</span></div>
+    <div class="col-md-12 text-center fiscalBill">ФІКСАЛЬНИЙ ЧЕК</div>
+    <div class="text-center imgExelio"><img src="Екселліо.jpg" alt="Екселліо"></div>
+</div>
+
+</body>
+</html>
